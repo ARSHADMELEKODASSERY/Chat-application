@@ -1,0 +1,53 @@
+.ls{
+    background: #d8d7d7;
+    color: yellowgreen;
+    height: 75vh;
+}
+.ls-top{
+    padding: 20px;
+}
+.ls-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ls-nav .logo{
+    max-width: 40px;
+    border-radius: 12px;
+}
+
+.menu-icon{
+    color: black;
+    height: 36px;
+    width: 52px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.ls-search{
+    background: #d8d7d7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+}
+.ls-search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(10, 1, 1);
+    font-size: 12px;    
+}
+.ls-search input::placeholder{
+    color: royalblue;
+}
+.ls-list{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    overflow-y: scroll;
+}
+.ls-list img{
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
