@@ -1,0 +1,57 @@
+.ptofile{
+    min-height: 100vh;
+    background: rgb(75, 75, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-container{
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 700px;
+}
+.profile-pic{
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.ptofile form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+.ptofile form h3{
+    font-weight: 500;
+}
+.ptofile label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: grey;
+    cursor: pointer;
+}
+.ptofile input, .ptofile textarea{
+        padding: 10px;
+    min-width: 300px;
+    border: 1px solid #c9c9c9;
+    outline-color: #077eff;
+}
+.ptofile button{
+    border: none;
+    padding: 8px;
+    background: #077eff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.ptofile label img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}

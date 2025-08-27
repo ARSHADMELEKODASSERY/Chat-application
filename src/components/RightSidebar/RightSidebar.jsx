@@ -2,6 +2,7 @@ import React from 'react';
 import "./RightSidebar.css";
 import assets from '../../assets/assets';
 import { GoDotFill } from "react-icons/go";
+import { logout } from '../../config/firebase';
 
 
 const RightSidebar = () => {
@@ -24,7 +25,7 @@ const RightSidebar = () => {
           <img src={assets.avatar1} alt="" />
         </div>
       </div>
-      <button>Logout</button>
+      <button onClick={()=>logout()}>Logout</button>
     </div>
   )
 }
