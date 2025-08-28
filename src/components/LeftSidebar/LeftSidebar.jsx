@@ -3,11 +3,17 @@ import "./LeftSidebar.css";
 import assets from "../../assets/assets";
 import { CiMenuKebab } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
-
-
+import { useNavigate } from 'react-router-dom';
 
 const LeftSidebar = () => {
-    const[open,setOpen] = useState(false)
+    const[open,setOpen] = useState(false);
+    const navigate = useNavigate();
+    const navigateToProfilrUpdate = () => {
+        navigate('/profile')
+    }
+    const navigateToLogout = () => {
+        navigate('/')
+    }
   return (
     <div className='ls'>
         <div className="ls-top">
@@ -17,9 +23,9 @@ const LeftSidebar = () => {
                 <div className="menu">
                     <CiMenuKebab className='menu-icon' onClick={()=>{setOpen(!open)}}/>
                    {open && <div className="sub-menu">
-                        <p>Edit Profile</p>
+                        <p onClick={navigateToProfilrUpdate}>Edit Profile</p>
                         <hr />
-                        <p>Logout</p>
+                        <p onClick={navigateToLogout}>Logout</p>
                     </div>}
                 </div>
             </div>
